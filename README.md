@@ -1,6 +1,6 @@
 # TheFirstKick
 MVC-Project-Tutorial
-<h2 style="color:darkred;">Features!</h2>
+<h2 style="color:red;">Features!</h2>
 <ul>
 <li>
 Entity Framework 
