@@ -28,7 +28,9 @@ namespace TheFirstKick.Models
 
             Property(c => c.UnitPrice).HasPrecision(18, 2);
 
-            Property(c => c.ExtendedPrice).HasPrecision(18, 2);
+            Property(c => c.ExtendedPrice)
+                .HasPrecision(18, 2)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed);
 
             Property(c => c.Notes)
                 .HasMaxLength(140)

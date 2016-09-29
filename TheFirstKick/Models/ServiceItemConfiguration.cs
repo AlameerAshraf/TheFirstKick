@@ -20,7 +20,7 @@ namespace TheFirstKick.Models
                , new IndexAnnotation(new IndexAttribute("AK_ServiceItem_ServiceItemCode") { IsUnique = true }));
 
             Property(s => s.ServiceItemName)
-                .HasMaxLength(18)
+                .HasMaxLength(80)
                 .IsRequired()
                 .HasColumnAnnotation("Index",
                 new IndexAnnotation(new IndexAttribute("AK_ServiceItem_ServiceItemName") { IsUnique = true }));
