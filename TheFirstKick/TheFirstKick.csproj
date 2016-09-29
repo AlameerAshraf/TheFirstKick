@@ -202,8 +202,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategoryConfiguration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\InventoryItem.cs" />
+    <Compile Include="Models\InventoryItemConfiguration.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Part.cs" />
+    <Compile Include="Models\PartConfiguration.cs" />
     <Compile Include="Models\ServiceItem.cs" />
     <Compile Include="Models\ServiceItemConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

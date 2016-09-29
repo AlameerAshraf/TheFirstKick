@@ -24,6 +24,8 @@ namespace TheFirstKick.Models
                 .IsRequired()
                 .HasColumnAnnotation("Index",
                 new IndexAnnotation(new IndexAttribute("AK_ServiceItem_ServiceItemName") { IsUnique = true }));
+
+            Property(s => s.Rate).HasPrecision(18, 2); 
         }
     }
 }
