@@ -6,6 +6,6 @@ MVC-Project-Tutorial
 Entity Framework 
 </li>
 <li>
-Identity
+Identity 2 Security Framework
 </li>
 </ul>
