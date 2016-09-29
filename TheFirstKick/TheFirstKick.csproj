@@ -198,23 +198,26 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DataLayer\WorkOrderConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\CategoryConfiguration.cs" />
+    <Compile Include="DataLayer\CategoryConfiguration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="DataLayer\CustomerConfiguration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\InventoryItem.cs" />
-    <Compile Include="Models\InventoryItemConfiguration.cs" />
+    <Compile Include="DataLayer\InventoryItemConfiguration.cs" />
     <Compile Include="Models\Labor.cs" />
-    <Compile Include="Models\LaborConfiguration.cs" />
+    <Compile Include="DataLayer\LaborConfiguration.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Part.cs" />
-    <Compile Include="Models\PartConfiguration.cs" />
+    <Compile Include="DataLayer\PartConfiguration.cs" />
     <Compile Include="Models\ServiceItem.cs" />
-    <Compile Include="Models\ServiceItemConfiguration.cs" />
+    <Compile Include="DataLayer\ServiceItemConfiguration.cs" />
+    <Compile Include="Models\WorkOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -299,7 +302,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DataLayer\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>

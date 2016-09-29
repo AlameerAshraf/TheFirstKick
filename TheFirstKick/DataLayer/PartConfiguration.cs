@@ -5,28 +5,29 @@ using System.Web;
 using System.Data.Entity.Infrastructure.Annotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
+using TheFirstKick.Models;
 
-namespace TheFirstKick.Models
+namespace TheFirstKick.DataLayer
 {
     public class PartConfiguration : EntityTypeConfiguration<Part>
     {
        public PartConfiguration()
         {
-            Property(c => c.InventoryItemCode)
+            Property(p => p.InventoryItemCode)
                 .HasMaxLength(15)
                 .IsRequired()
                 .HasColumnAnnotation("Index",
                 new IndexAnnotation(new IndexAttribute("AK_Part",2) { IsUnique = true }));
 
-            Property(c => c.WorkOrderId)
+            Property(p => p.WorkOrderId)
                  .HasColumnAnnotation("Index",
                 new IndexAnnotation(new IndexAttribute("AK_Part", 1) { IsUnique = true }));
 
-            Property(c => c.InventoryItemName)
+            Property(p => p.InventoryItemName)
                 .HasMaxLength(80)
                 .IsRequired();
 
-            Property(c => c.UnitPrice).HasPrecision(18, 2);
+            Property(p => p.UnitPrice).HasPrecision(18, 2);
 
             Property(c => c.ExtendedPrice)
                 .HasPrecision(18, 2)

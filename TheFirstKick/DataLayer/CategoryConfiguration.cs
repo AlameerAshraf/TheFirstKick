@@ -5,14 +5,15 @@ using System.Web;
 using System.Data.Entity.Infrastructure.Annotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
+using TheFirstKick.Models;
 
-namespace TheFirstKick.Models
+namespace TheFirstKick.DataLayer
 {
     public class CategoryConfiguration : EntityTypeConfiguration<Category>
     {
         public CategoryConfiguration()
         {
-            Property(c => c.CategoryName)
+            Property(cc => cc.CategoryName)
                 .HasMaxLength(20)
                 .IsRequired()
                 .HasColumnAnnotation("Index",

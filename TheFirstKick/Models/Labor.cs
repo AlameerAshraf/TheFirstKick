@@ -9,7 +9,7 @@ namespace TheFirstKick.Models
     {
         public int LaborId { get; set; }
         public int WorkOrderId { get; set; }
-        //  public workorder WorkOrder { get; set; }
+        public WorkOrder WorkOrder { get; set; }
         public string ServiceItemCode { get; set; }
         public string ServiceItemName { get; set; }
         public decimal LaborHours { get; set; }

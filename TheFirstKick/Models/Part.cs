@@ -10,7 +10,7 @@ namespace TheFirstKick.Models
     {
         public int Partid { get; set; }
         public int WorkOrderId { get; set; }
-        //  public workorder WorkOrder { get; set; }
+        public WorkOrder WorkOrder { get; set; }
         public string InventoryItemCode { get; set; }
         public string InventoryItemName { get; set; }
         public int Quentity { get; set; }
