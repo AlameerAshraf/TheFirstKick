@@ -12,6 +12,8 @@ namespace TheFirstKick.DataLayer
 {
     public class InventoryItemConfiguration : EntityTypeConfiguration<InventoryItem>
     {
+
+     
         public InventoryItemConfiguration ()
         {
             Property(ia => ia.InventoryItemCode)
